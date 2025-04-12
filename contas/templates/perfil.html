@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Bem-vindo, {{ usuario.nome }}!</h2>
+<p>Este é seu perfil.</p>
+<a href="{% url 'logout' %}">Sair</a>
+{% endblock %}
